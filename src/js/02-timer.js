@@ -96,7 +96,7 @@ function handleStart(e) {
   startButton.setAttribute('disabled', '');  // деактивуємо кнопку Start
   let timeLeftInMs, timeLeft;
 
-  timerId = setInterval(() => {     // setInterval запускає callback раз на сек ита повертає свій id 
+  let timerId = setInterval(() => {     // setInterval запускає callback раз на сек ита повертає свій id 
     timeLeftInMs = fp.selectedDates[0] - Date.now();  // час, що залишився у мсек
     timeLeft = convertMs(timeLeftInMs);   // конвертуємо в об‘ект з кількістю днів, год, хв, сек
     fillTimer(timeLeft);    // оновлюємо дані таймера

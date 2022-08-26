@@ -31,9 +31,9 @@ function handleSubmit(event) {
     elements: { delay, step, amount } // властивість elements форми містить об'єкт із посиланнями
   } = event.currentTarget;            // на всі її елементи які мають атрибут name
 
-  delayValue = Number(delay.value);   // перетворюю дані інпутів на числа, 
-  stepValue = Number(step.value);     // щоб у подальшому уникнути конкатенації
-  amountValue = Number(amount.value); // строк замість додавання 
+  let delayValue = Number(delay.value);   // перетворюю дані інпутів на числа, 
+  let stepValue = Number(step.value);     // щоб у подальшому уникнути конкатенації
+  let amountValue = Number(amount.value); // строк замість додавання 
   Notiflix.Notify.info(`delay: ${delayValue}, step: ${stepValue}, amount: ${amountValue}`); // повідомлення про введені дані
     // event.currentTarget.reset();   // очищення інпутів
   
