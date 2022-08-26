@@ -5,7 +5,7 @@ import "flatpickr/dist/flatpickr.min.css";
 import Notiflix from 'notiflix';
 import "notiflix/dist/notiflix-3.2.5.min.css";
 
-Notiflix.Notify.init({});   //  установка параметрів користувача
+// Notiflix.Notify.init({});   //  установка параметрів користувача за замовченням
 
 const input = document.querySelector('#datetime-picker');
 const startButton = document.querySelector('button[data-start]');
